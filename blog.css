@@ -1,558 +1,391 @@
-@font-face {
-    font-family: poppins;
-    src: url(poppins/Poppins-Regular.ttf)
-}
-
-body {
-    font-family: poppins;
-    overflow-x: hidden;
-}
-
-.book {
+li {
+    display: inline;
+  }
+  header{
     display: flex;
     gap: 10%;
-    margin-left: 13%;
-    margin-top: 5%;
-
-    img {
-        height: 20vh;
-        width: 15%;
-
-    }
-}
-
-#book-cover {
-    height: 20vh;
-    width: 12%;
-}
-
-
-.introduction {
-    display: inline;
-}
-
-.title {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/shelf\ 2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    gap: 25%;
-    height: 15vh;
-
-    p {
-        font-size: 20px;
-        color: white;
-        font-weight: lighter;
-
-    }
-
-    img {
-        height: 20vh;
-        width: 20%;
-        margin-right: 20%;
-
-
-    }
-}
-
-.title h1 {
-    display: 40vw;
-    color: white;
-    margin-left: 31vw;
-    font-size: 4em;
-    margin-top: 5vh;
-}
-
-.details {
-    display: inline;
-    font-size: 25px;
-    color: black;
-
-
-    p {
-        width: 60%;
-        margin-top: 2%;
-        text-align: center;
-        margin-left: 20%;
-    }
-
-}
-
-.reflection {
-    display: flex;
-}
-
-.reflection-contents {
-    display: inline;
-    font-size: 25px;
-    line-height: 1.7;
-    width: 40%;
-    margin-left: 10%;
-    margin-top: 3%;
-
-    h1 {
-        font-size: 60px;
-    }
-
-}
-
-#quote {
-    font-size: 25px;
-    color: rgb(46, 46, 153);
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.image img {
-    width: 90%;
-    height: 50vh;
-    margin-left: 20%;
-    margin-top: 55%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.button a {
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
-    border: none;
-    background-color: rgba(97, 97, 97, 0.288);
-    padding: 1% 2%;
-    border-radius: 20px;
-    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
-}
-
-.button {
-    display: flex;
-    margin-top: 5vh;
-    margin-left: 7vw;
-    gap: 70vw;
-}
-
-.footer {
-    background-color: black;
-    height: 20vh;
-    width: 100%;
-    position: absolute;
-    display: inline;
+    background-color: lightblue;
     align-items: center;
-    padding-left: 40%;
-    margin-top: 5%;
-    padding-top: 1%;
-
-    h1 {
-        color: white;
+    justify-content: center;
+  }
+  #nameText{
+    color: rgb(138, 103, 51);
+  }
+  .arrowIcon{
+   margin-left: 90%;
+   margin-top: -50px;
+  }
+  #homepageLink{
+    font-size: 20px;
+    color: blue;
+  }
+  ul{
+    display: flex;
+    gap: 29%;
+  }
+  #blogger{
+    margin-left: 80px;
+  }
+  #contactHeader{
+    margin-left: 200px;
+    margin-bottom: 50px;
+  }
+  #copyright{
+    margin-top: 25px;
+  }
+  #bloggerIcon{
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 45px;
+  }
+  #isbn{
+    color: blue;
+  }
+  #orText{
+    margin-left: 170px;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(138, 103, 51);
+  }
+  .socialHandles{
+    display: flex;
+    gap: 12%;
+    font-size: 30px;
+  }
+  .headerText{
+    display: flex;
+    gap: 2%;
+  }
+  #headertext{
+    font-style: oblique;
+    font-size: 20px;
+  }
+  #newsletterButton{
+    padding: 10px;
+    border: solid 1px rgb(138, 103, 51);
+    background-color: transparent;
+  }
+  #newsletterButton:hover{
+    background-color: rgb(138, 103, 51);
+  }
+  #icon{
+    margin-top: 15px;
+  }
+  #book{
+    width: 35%;
+  }
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+  }
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    border: none;
+  }
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  .imageContainer{
+    display: flex;
+    gap: 15%;
+  }
+  .vertical-menu {
+    width: 200px;
+    position: fixed;
+  }
+  .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .vertical-menu a:hover {
+    background-color: lightblue;
+  }
+  .vertical-menu a.active {
+    background-color: blue;
+    color: white;
+  }
+  .blogContainer{
+    margin-left: 30%;
+    width: 50%;
+  }
+  h1{
+    font-size: 45px;
+  }
+  .bookOverview{
+    display: flex;
+    margin-top: 20px;
+    gap: 6%;
+    margin-top: 20px;
+  }
+  .bookrename{
+    display: flex;
+    gap: 6%;
+    margin-top: 20px;
+  }
+  #text{
+color: blue;
+margin-bottom: 50px;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .reviews{
+    display: flex;
+    gap: 6%;
+  }
+  .vl{
+    height: 150px;
+    border-left: 6px solid blue;
+    margin-top: 60px
+  }
+  #renameLine{
+    height: 200px;
+    margin-top: 80px;
+  }
+  #reviewsLine{
+    height: 240px;
+    margin-top: 250px;
+  }
+  #backgroundImage{
+    width: 100%;
+    height: 70vh;
+    filter: brightness(50%);
+  }
+  .homepage{
+    position: relative;
+  }
+  .homepageContent{
+    position: absolute;
+    top: 20%;
+    left:35%;
+    color: aliceblue;
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  .starRate{
+    display: flex;
+    gap: 4%;
+    font-size: 30px;
+  }
+  #rate{
+    margin-top:50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  h2{
+    color: blue;
+  }
+  #contactIcon{
+    margin-top: 25px;
+  }
+  #contactLink{
+    color: blue;
+  }
+  .contactDetails{
+    display: flex;
+    gap: 10%;
+  }
+  @media screen and (max-width: 450px){
+header{
+    display: block;
+    width: 50vh;
+    padding: 20px;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+#home{
+    font-size: 20px;
+    margin-top: 0%;
+}
+#title{
+   font-size: 50px;
+   white-space: nowrap;
+}
+.bookOverview{
+    width: 48vh;
+}
+.bookrename{
+    width: 48vh;
+}
+.homepageContent{
+    left: 10%;
+    font-size: 15px;
+}
+.arrowIcon{
+    display: none;
+}
+.subscribeContent{
+    white-space: nowrap;
+}
+.homepagelink{
+    white-space: nowrap;
+}
+.SubscribeContainer{
+    width: 50vh;
+}
+#button{
+    width: 50vh;
+}
+#contactHeader{
+    margin-left: 0%;
+}
+.contactInformation{
+    white-space: nowrap;
+    padding: 20px;
+}
+#orText{
+    margin-left: 60px;
+}
+h1{
+    white-space: nowrap;
+    font-size: 35px;
+}
+#book{
+    width: 70%;
+    height: 40vh;
+    margin-left: 100px;
+}
+.starRate{
+    font-size: 15px;
+}
+#backgroundImage{
+    width: 55vh;
+    height: 50vh;
+}
+.socialHandles{
+    gap: 54px;
+}
+.blogContainer{
+    margin-left: 0%;
+}
+.vertical-menu{
+    display: none;
+}
+.imageContainer{
+    display: grid;
+    gap: 0;
+}
+.blogContainer{
+    margin: 0%;
+    padding: 0%;
+}
+.headerText{
+    justify-content: center;
+}
+  }
+  @media screen and (max-width: 1000px) and (min-width: 451px){
+    header{
+        display: block;
+        width: 95%;
+        padding: 20px;
     }
-
-    p {
-
-        color: white;
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    #home{
         font-size: 20px;
-
-
+        margin-top: 0%;
     }
-
-}
-
-
-
-
-@media only screen and (max-width:750px) {
-    .body {
-        overflow-x: hidden;
+    #title{
+       font-size: 50px;
+       white-space: nowrap;
     }
-
-    .title {
-        background-size: 100vw;
-        overflow: hidden;
-        margin-top: -5%;
-        width: 102%;
-        display: flex;
-        gap: 25%;
-        height: 15vh;
-
-        h1 {
-            color: white;
-            font-size: 28px;
-            margin-top: 10%;
-            margin-left: 6%;
-        }
+    .bookOverview{
+        width: 90vh;
     }
-
-    .button {
-        gap: 40vw;
-
-        a {
-            font-size: 20px;
-        }
+    .bookrename{
+        width: 90vh;
     }
-
-    .details {
-        display: inline;
-        font-size: 16px;
-        color: black;
-
-
-
-        p {
-            width: 90%;
-            margin-top: 13%;
-            margin-left: 4%
-        }
-
+    .homepageContent{
+        left: 10%;
+        font-size: 15px;
     }
-
-    .book {
-        flex-direction: column;
-        gap: 10%;
+    .arrowIcon{
+        display: none;
+    }
+    .subscribeContent{
+        white-space: nowrap;
+    }
+    .homepagelink{
+        white-space: nowrap;
+    }
+    .SubscribeContainer{
+        width: 100vh;
+    }
+    #button{
+        width: 100vh;
+    }
+    #contactHeader{
         margin-left: 0%;
-        align-items: center;
-        margin-top: 10%;
-        width: 100%;
-
-        img {
-            height: 20vh;
-            width: 50%;
-            margin-bottom: 10%;
-
-
-        }
     }
-
-    #book-cover {
-        height: 20vh;
-        width: 44%;
-
+    .contactInformation{
+        white-space: nowrap;
+        padding: 20px;
     }
-
-    .reflection-contents {
-        display: inline;
-        font-size: 16px;
-        line-height: 1.7;
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
-        margin-top: 3%;
-
-        h1 {
-            font-size: 26px;
-            text-align: center;
-            margin-bottom: 13%;
-        }
-
+    #orText{
+        margin-left: 60px;
     }
-
-    #quote {
-        font-size: 16px;
-        color: rgb(46, 46, 153);
-        margin-bottom: 10%;
+    h1{
+        white-space: nowrap;
+        font-size: 35px;
     }
-
-
-    .reflection {
-        flex-direction: column;
-    }
-
-    .image img {
-        width: 90%;
-        height: 35vh;
-        margin-top: 10%;
-        margin-left: 5%;
-        margin-bottom: 50%;
-    }
-
-    .footer {
-        background-color: black;
-        height: 20vh;
-        width: 85%;
-        position: absolute;
-        display: inline;
-        align-items: center;
-        padding-left: 10%;
-        margin-top: -38%;
-        padding-top: 1%;
-
-        h1 {
-            color: white;
-            font-size: 16px;
-        }
-
-        p {
-
-            color: white;
-            font-size: 16px;
-
-
-        }
-    }
-}
-
-
-@media only screen and (min-width:751px) and (max-width:999px) {
-
-    .body {
-        overflow-x: hidden;
-    }
-
-    .title {
-        background-size: 100vw;
-        overflow: hidden;
-        margin-top: -5%;
-        width: 100%;
-        display: flex;
-        gap: 25%;
-        height: 15vh;
-
-        h1 {
-            color: white;
-            font-size: 50px;
-            margin-top: 7%;
-            margin-left: 4%;
-        }
-    }
-
-    .button {
-        gap: 58vw;
-        margin-right: 40%;
-
-
-        a {
-            font-size: 22px;
-        }
-
-    }
-
-    .details {
-        display: inline;
-        font-size: 22px;
-        color: black;
-
-        p {
-            width: 90%;
-            margin-top: 8%;
-            margin-left: 4%
-        }
-
-    }
-
-    .book {
-        display: flex;
-        gap: 5%;
-        margin-left: 2%;
-        margin-top: 10%;
-
-        img {
-            height: 20vh;
-            width: 20%;
-
-        }
-    }
-
-    #book-cover {
-        height: 20vh;
-        width: 22%;
-    }
-
-
-    .reflection {
-        flex-direction: column;
-    }
-
-    .reflection-contents {
-        display: inline;
-        font-size: 22px;
-        line-height: 1.7;
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
-        margin-top: 3%;
-
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10%;
-        }
-
-    }
-
-    #quote {
-        font-size: 2px;
-        color: rgb(46, 46, 153);
-        margin-bottom: 10%;
-    }
-
-
-    .reflection {
-        flex-direction: column;
-    }
-
-    .image img {
-        width: 70%;
-        height: 35vh;
-        margin-top: 10%;
-        margin-left: 15%;
-    }
-
-    .footer {
-        background-color: black;
-        height: 14vh;
-        width: 68%;
-        position: absolute;
-        display: inline;
-        align-items: center;
-        padding-left: 30%;
-        margin-top: 8%;
-        padding-bottom: 7%;
-
-
-        h1 {
-            color: white;
-            font-size: 22px;
-        }
-
-        p {
-
-            color: white;
-            font-size: 22px;
-
-
-        }
-    }
-}
-
-
-
-@media only screen and (min-width:1000px) and (max-width:1300px) {
-    .body {
-        overflow-x: hidden;
-    }
-
-    .title {
-        background-size: 100vw;
-        overflow: hidden;
-        margin-top: -5%;
-        width: 100%;
-        display: flex;
-        gap: 25%;
-        height: 20vh;
-
-        h1 {
-            color: white;
-            font-size: 90px;
-            margin-top: 12%;
-            margin-left: 8%;
-        }
-    }
-
-    .button {
-        gap: 58vw;
-        margin-right: 40%;
-
-
-        a {
-            font-size: 40px;
-        }
-
-    }
-
-
-    .details {
-        display: inline;
-        font-size: 40px;
-        color: black;
-
-        p {
-            width: 90%;
-            margin-top: 8%;
-            margin-left: 5%
-        }
-
-    }
-
-    .book {
-        display: flex;
-        gap: 4%;
-        margin-left: 2%;
-        margin-top: 10%;
-
-        img {
-            height: 20vh;
-            width: 22%;
-
-        }
-    }
-
-    #book-cover {
-        height: 20vh;
-        width: 25%;
-    }
-
-
-    .reflection {
-        flex-direction: column;
-    }
-
-    .reflection-contents {
-        display: inline;
-        font-size: 40px;
-        line-height: 1.7;
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
-        margin-top: 3%;
-
-        h1 {
-            font-size: 90px;
-
-        }
-
-    }
-
-    #quote {
-        font-size: 45px;
-        color: rgb(46, 46, 153);
-        margin-bottom: 10%;
-    }
-
-
-    .reflection {
-        flex-direction: column;
-    }
-
-    .image img {
-        width: 75%;
+    #book{
+        width: 30%;
         height: 40vh;
-        margin-top: 10%;
-        margin-left: 14%;
+        justify-self: center;
     }
-
-
-    .footer {
-        background-color: black;
-        height: 14vh;
-        width: 68%;
-        position: absolute;
-        display: inline;
-        align-items: center;
-        padding-left: 30%;
-        padding-bottom: 10%;
-
-
-        h1 {
-            color: white;
-            font-size: 40px;
-        }
-
-        p {
-
-            color: white;
-            font-size: 40px;
-
-
-        }
+    .starRate{
+        font-size: 20px;
     }
-}
+    #backgroundImage{
+        width: 100%;
+        height: 50vh;
+    }
+    .headerText{
+        justify-content: center;
+    }
+    .socialHandles{
+        gap: 85px;
+    }
+    .blogContainer{
+        margin-left: 0%;
+    }
+    .vertical-menu{
+        display: none;
+    }
+    .imageContainer{
+        display: grid;
+        gap: 0;
+    }
+    ul{
+        gap: 60%;
+    }
+    .blogContainer{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+  }

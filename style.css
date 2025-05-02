@@ -1,101 +1,104 @@
-li {
-    display: inline;
-  }
-  header{
+
+@font-face {
+    font-family: poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+body {
+   
+    font-family: poppins;
+}
+
+
+.reading {
     display: flex;
-    gap: 10%;
-    background-color: grey;
-    align-items: center;
-    justify-content: center;
-  }
-  #nameText{
-    color: rgb(138, 103, 51);
-  }
-  ul{
-    display: flex;
-    gap: 12%;
-  }
-  #copyright{
-    margin-top: 25px;
-  }
-  a{
-    text-decoration: none;
-    color: burlywood;
-  }
-  .socialHandles{
-    display: flex;
-    gap: 12%;
-    font-size: 30px;
-  }
-  .headerText{
-    display: flex;
-    gap: 2%;
-  }
-  #headertext{
-    font-style: oblique;
-    font-size: 20px;
-  }
-  #newsletterButton{
-    padding: 10px;
-    border: solid 1px rgb(138, 103, 51);
-    background-color: transparent;
-  }
-  #newsletterButton:hover{
-    background-color: rgb(138, 103, 51);
-  }
-  .homepageContent{
-    position: absolute;
-    top: 20%;
-    left:35%;
-    color: aliceblue;
-    font-size: 30px;
-  }
-  .homepage{
+    gap: 8vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.reading img {
     position: relative;
-  }
-  #icon{
-    margin-top: 15px;
-  }
-  h3{
-    margin-left: 130px;
-  }
-  #bloggerIcon{
-    margin-top: 30px;
-    margin-right: 5px;
-    font-size: 45px;
-  }
-  #backgroundImage{
-    width: 100%;
-    height: 90vh;
-    filter: brightness(50%);
-  }
-  input[type=text], input[type=submit] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid lightblue;
-    box-sizing: border-box;
-  }
-  input[type=email]{
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid lightblue;
-    box-sizing: border-box;
-  }
-  
-  input[type=checkbox] {
-    margin-top: 16px;
-  }
-  
-  input[type=submit] {
-    background-color: blue;
+    overflow: hidden;
+    width: 8vw;
+    height: 25vh;
+    z-index: -1;
+
+}
+
+.buttons {
     color: white;
+    margin-top: -20vh;
+    font-size: 300%;
+    margin-left: 10vw;
+    display: flex;
+    gap: 60vw;
+    z-index: 1;
+}
+
+a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
     border: none;
-  }
-  
-  input[type=submit]:hover {
-    opacity: 0.8;
-  }
+    background-color: rgba(97, 97, 97, 0.288);
+    padding: 2% 4%;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+
+}
+.text{
+    border: none;
+    text-align: center;
+    padding: 1%;
+    display:flex ;
+    gap: 5vw;
+    margin-left: 15vw;
+
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+    .reading{
+        flex-direction: column;
+        
+    }
+    .reading img{
+        width: 50vw;
+        height: 40vh;
+        margin-left: 20vw;
+    }
+    a{
+        padding: 0% 2%;
+     height: 8vh;
+     width: 30%;
+    
+    
+    }
+    .text{
+        margin-left: 0%;
+    }
+}
+@media only screen and (min-width:751px) and (max-width:999px) {
+    .reading{
+        flex-direction: column;
+    }
+    .reading img{
+        width: 50vw;
+        height: 50vh;
+        margin-left: 20vw;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+    .text{
+        margin-left: 5vh;
+    }
+    .reading img{
+        height: 20vh;
+    }
+}
