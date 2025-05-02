@@ -1,104 +1,391 @@
-
-@font-face {
-    font-family: poppins;
-    src: url(Fonts/Poppins-Regular.ttf);
-}
-
-body {
-   
-    font-family: poppins;
-}
-
-
-.reading {
+li {
+    display: inline;
+  }
+  header{
     display: flex;
-    gap: 8vw;
-    margin-top: 5vh;
-    margin-left: 5vw;
-}
-
-.reading img {
-    position: relative;
-    overflow: hidden;
-    width: 8vw;
-    height: 25vh;
-    z-index: -1;
-
-}
-
-.buttons {
-    color: white;
-    margin-top: -20vh;
-    font-size: 300%;
-    margin-left: 10vw;
+    gap: 10%;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+  }
+  #nameText{
+    color: rgb(138, 103, 51);
+  }
+  .arrowIcon{
+   margin-left: 90%;
+   margin-top: -50px;
+  }
+  #homepageLink{
+    font-size: 20px;
+    color: blue;
+  }
+  ul{
     display: flex;
-    gap: 60vw;
-    z-index: 1;
-}
-
-a {
-    color: black;
-    font-size: 1.5em;
+    gap: 29%;
+  }
+  #blogger{
+    margin-left: 80px;
+  }
+  #contactHeader{
+    margin-left: 200px;
+    margin-bottom: 50px;
+  }
+  #copyright{
+    margin-top: 25px;
+  }
+  #bloggerIcon{
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 45px;
+  }
+  #isbn{
+    color: blue;
+  }
+  #orText{
+    margin-left: 170px;
+  }
+  a{
     text-decoration: none;
+    color: rgb(138, 103, 51);
+  }
+  .socialHandles{
+    display: flex;
+    gap: 12%;
+    font-size: 30px;
+  }
+  .headerText{
+    display: flex;
+    gap: 2%;
+  }
+  #headertext{
+    font-style: oblique;
+    font-size: 20px;
+  }
+  #newsletterButton{
+    padding: 10px;
+    border: solid 1px rgb(138, 103, 51);
+    background-color: transparent;
+  }
+  #newsletterButton:hover{
+    background-color: rgb(138, 103, 51);
+  }
+  #icon{
+    margin-top: 15px;
+  }
+  #book{
+    width: 35%;
+  }
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+  }
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  input[type=submit] {
+    background-color: blue;
+    color: white;
     border: none;
-    background-color: rgba(97, 97, 97, 0.288);
-    padding: 2% 4%;
-    border-radius: 20px;
-    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
-
+  }
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  .imageContainer{
+    display: flex;
+    gap: 15%;
+  }
+  .vertical-menu {
+    width: 200px;
+    position: fixed;
+  }
+  .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .vertical-menu a:hover {
+    background-color: lightblue;
+  }
+  .vertical-menu a.active {
+    background-color: blue;
+    color: white;
+  }
+  .blogContainer{
+    margin-left: 30%;
+    width: 50%;
+  }
+  h1{
+    font-size: 45px;
+  }
+  .bookOverview{
+    display: flex;
+    margin-top: 20px;
+    gap: 6%;
+    margin-top: 20px;
+  }
+  .bookrename{
+    display: flex;
+    gap: 6%;
+    margin-top: 20px;
+  }
+  #text{
+color: blue;
+margin-bottom: 50px;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .reviews{
+    display: flex;
+    gap: 6%;
+  }
+  .vl{
+    height: 150px;
+    border-left: 6px solid blue;
+    margin-top: 60px
+  }
+  #renameLine{
+    height: 200px;
+    margin-top: 80px;
+  }
+  #reviewsLine{
+    height: 240px;
+    margin-top: 250px;
+  }
+  #backgroundImage{
+    width: 100%;
+    height: 70vh;
+    filter: brightness(50%);
+  }
+  .homepage{
+    position: relative;
+  }
+  .homepageContent{
+    position: absolute;
+    top: 20%;
+    left:35%;
+    color: aliceblue;
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  .starRate{
+    display: flex;
+    gap: 4%;
+    font-size: 30px;
+  }
+  #rate{
+    margin-top:50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  h2{
+    color: blue;
+  }
+  #contactIcon{
+    margin-top: 25px;
+  }
+  #contactLink{
+    color: blue;
+  }
+  .contactDetails{
+    display: flex;
+    gap: 10%;
+  }
+  @media screen and (max-width: 450px){
+header{
+    display: block;
+    width: 50vh;
+    padding: 20px;
 }
-.text{
-    border: none;
-    text-align: center;
-    padding: 1%;
-    display:flex ;
-    gap: 5vw;
-    margin-left: 15vw;
-
+body{
+    padding: 0%;
+    margin: 0%;
 }
-h5{
-    text-align: center;
+#home{
+    font-size: 20px;
+    margin-top: 0%;
 }
-p{
-    text-align: center;
+#title{
+   font-size: 50px;
+   white-space: nowrap;
 }
-
-@media only screen and (max-width:750px) {
-    .reading{
-        flex-direction: column;
-        
+.bookOverview{
+    width: 48vh;
+}
+.bookrename{
+    width: 48vh;
+}
+.homepageContent{
+    left: 10%;
+    font-size: 15px;
+}
+.arrowIcon{
+    display: none;
+}
+.subscribeContent{
+    white-space: nowrap;
+}
+.homepagelink{
+    white-space: nowrap;
+}
+.SubscribeContainer{
+    width: 50vh;
+}
+#button{
+    width: 50vh;
+}
+#contactHeader{
+    margin-left: 0%;
+}
+.contactInformation{
+    white-space: nowrap;
+    padding: 20px;
+}
+#orText{
+    margin-left: 60px;
+}
+h1{
+    white-space: nowrap;
+    font-size: 35px;
+}
+#book{
+    width: 70%;
+    height: 40vh;
+    margin-left: 100px;
+}
+.starRate{
+    font-size: 15px;
+}
+#backgroundImage{
+    width: 55vh;
+    height: 50vh;
+}
+.socialHandles{
+    gap: 54px;
+}
+.blogContainer{
+    margin-left: 0%;
+}
+.vertical-menu{
+    display: none;
+}
+.imageContainer{
+    display: grid;
+    gap: 0;
+}
+.blogContainer{
+    margin: 0%;
+    padding: 0%;
+}
+.headerText{
+    justify-content: center;
+}
+  }
+  @media screen and (max-width: 1000px) and (min-width: 451px){
+    header{
+        display: block;
+        width: 95%;
+        padding: 20px;
     }
-    .reading img{
-        width: 50vw;
-        height: 40vh;
-        margin-left: 20vw;
+    body{
+        padding: 0%;
+        margin: 0%;
     }
-    a{
-        padding: 0% 2%;
-     height: 8vh;
-     width: 30%;
-    
-    
+    #home{
+        font-size: 20px;
+        margin-top: 0%;
     }
-    .text{
+    #title{
+       font-size: 50px;
+       white-space: nowrap;
+    }
+    .bookOverview{
+        width: 90vh;
+    }
+    .bookrename{
+        width: 90vh;
+    }
+    .homepageContent{
+        left: 10%;
+        font-size: 15px;
+    }
+    .arrowIcon{
+        display: none;
+    }
+    .subscribeContent{
+        white-space: nowrap;
+    }
+    .homepagelink{
+        white-space: nowrap;
+    }
+    .SubscribeContainer{
+        width: 100vh;
+    }
+    #button{
+        width: 100vh;
+    }
+    #contactHeader{
         margin-left: 0%;
     }
-}
-@media only screen and (min-width:751px) and (max-width:999px) {
-    .reading{
-        flex-direction: column;
+    .contactInformation{
+        white-space: nowrap;
+        padding: 20px;
     }
-    .reading img{
-        width: 50vw;
+    #orText{
+        margin-left: 60px;
+    }
+    h1{
+        white-space: nowrap;
+        font-size: 35px;
+    }
+    #book{
+        width: 30%;
+        height: 40vh;
+        justify-self: center;
+    }
+    .starRate{
+        font-size: 20px;
+    }
+    #backgroundImage{
+        width: 100%;
         height: 50vh;
-        margin-left: 20vw;
     }
-}
-@media only screen and (min-width:1000px) and (max-width:1300px) {
-    .text{
-        margin-left: 5vh;
+    .headerText{
+        justify-content: center;
     }
-    .reading img{
-        height: 20vh;
+    .socialHandles{
+        gap: 85px;
     }
-}
+    .blogContainer{
+        margin-left: 0%;
+    }
+    .vertical-menu{
+        display: none;
+    }
+    .imageContainer{
+        display: grid;
+        gap: 0;
+    }
+    ul{
+        gap: 60%;
+    }
+    .blogContainer{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+  }

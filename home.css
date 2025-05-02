@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+body {
+   
+    font-family: poppins;
+}
+
+
+.reading {
+    display: flex;
+    gap: 8vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.reading img {
+    position: relative;
+    overflow: hidden;
+    width: 8vw;
+    height: 25vh;
+    z-index: -1;
+
+}
+
+.buttons {
+    color: white;
+    margin-top: -20vh;
+    font-size: 300%;
+    margin-left: 10vw;
+    display: flex;
+    gap: 60vw;
+    z-index: 1;
+}
+
+a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(97, 97, 97, 0.288);
+    padding: 2% 4%;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+
+}
+.text{
+    border: none;
+    text-align: center;
+    padding: 1%;
+    display:flex ;
+    gap: 5vw;
+    margin-left: 15vw;
+
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+    .reading{
+        flex-direction: column;
+        
+    }
+    .reading img{
+        width: 50vw;
+        height: 40vh;
+        margin-left: 20vw;
+    }
+    a{
+        padding: 0% 2%;
+     height: 8vh;
+     width: 30%;
+    
+    
+    }
+    .text{
+        margin-left: 0%;
+    }
+}
+@media only screen and (min-width:751px) and (max-width:999px) {
+    .reading{
+        flex-direction: column;
+    }
+    .reading img{
+        width: 50vw;
+        height: 50vh;
+        margin-left: 20vw;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+    .text{
+        margin-left: 5vh;
+    }
+    .reading img{
+        height: 20vh;
+    }
+}
