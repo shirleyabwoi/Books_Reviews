@@ -2,7 +2,9 @@
     font-family: poppins;
     src: url(Fonts/Poppins-Regular.ttf);
 }
-
+#poster{
+    width: 30vw;
+}
 body {
     font-family: poppins;
     margin-top: -0%;
